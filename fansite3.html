@@ -177,6 +177,7 @@
                 step: function( now){
                     if(now >= 0)
                     {
+                        $('.all-item').stop();
                         $( ".button-left" ).css( "display", 'none' );
                     }
                     if(now <= -100){
@@ -194,6 +195,7 @@
                 step: function( now){
                     if(now <= -900)
                     {
+                        $('.all-item').stop();
                         $( ".button-right" ).css( "display", 'none' );
                     }
                     if(now >= -100){
