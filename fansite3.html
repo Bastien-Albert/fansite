@@ -150,8 +150,6 @@
             $parent.find('.image-current').attr('id', 'slideID-' + $nextdiv.attr('id')).attr('src', $ImageCurrent).attr('alt', $alt).fadeTo( "slow", 1 );
             $parent.find('#description').html(description[$nextdiv.attr('id')]);
         });
-    });
-    $(document).ready(function() {
         $('.button-prev').click(function(){
             $parent = $(this).closest('.slide');
             $parent.find('.image-current').css('opacity', 0);
@@ -168,8 +166,6 @@
             $parent.find('.image-current').attr('id', 'slideID-' + $nextdiv.attr('id')).attr('src', $ImageCurrent).attr('alt', $alt).fadeTo( "slow", 1 );
             $parent.find('#description').html(description[$nextdiv.attr('id')]);
         });
-    });
-    $(document).ready(function() {
         $('.button-left').click(function(){
             $parent = $(this).closest('#image-all');
             $parent.find('.all-item').animate({"left": "+=150px"}, {
@@ -186,8 +182,6 @@
                 }
             });
         });
-    });
-    $(document).ready(function() {
         $('.button-right').click(function(){
             $parent = $(this).closest('#image-all');
             $parent.find('.all-item').animate({"left": "-=150px"}, {
@@ -204,8 +198,6 @@
                 }
             });
         });
-    });
-    $(document).ready(function() {
         $('.item-slide').click(function(){
             $parent = $(this).closest('.slide');
             $parent.find('.image-current').css('opacity', 0);
@@ -218,5 +210,6 @@
             $parent.find('#description').html(description[$currentClass]);
         });
     });
+
 </script>
 </html>
